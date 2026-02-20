@@ -1,0 +1,11 @@
+<div class="not-prose w-full my-12">
+  <div class="flex flex-row overflow-x-auto snap-x snap-mandatory gap-10 pb-8 pt-4 px-6 scrollbar-hide">
+    {{ .Inner }}
+  </div>
+</div>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .snap-x { scroll-behavior: smooth; }
+</style>

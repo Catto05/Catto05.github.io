@@ -9,7 +9,37 @@
     <managingEditor>youremail@example.com (Lorenzo Cattolico)</managingEditor>
     <webMaster>youremail@example.com (Lorenzo Cattolico)</webMaster>
     <copyright>© 2026 Lorenzo Cattolico</copyright>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Feb 2026 16:23:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About_me</title>
+      <link>http://localhost:1313/about_me/</link>
+      <pubDate>Fri, 20 Feb 2026 16:23:00 +0100</pubDate>
+      <author>youremail@example.com (Lorenzo Cattolico)</author>
+      <guid>http://localhost:1313/about_me/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Seagull</title>
+      <link>http://localhost:1313/projects/seagull/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Lorenzo Cattolico)</author>
+      <guid>http://localhost:1313/projects/seagull/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Super Mario Music</title>
+      <link>http://localhost:1313/projects/super_mario_music_project/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Lorenzo Cattolico)</author>
+      <guid>http://localhost:1313/projects/super_mario_music_project/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>
