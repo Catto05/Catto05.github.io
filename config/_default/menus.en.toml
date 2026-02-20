@@ -11,18 +11,12 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
+  name = "Projects"
   pageRef = "posts"
   weight = 10
 [[main]]
-  name = "Parent"
+  name = "About me"
   weight = 20
-
-#[[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
 
 #[[main]]
 #  name = "example sub-menu 2"
