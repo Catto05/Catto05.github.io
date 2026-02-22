@@ -16,19 +16,19 @@
   </url>
   <url>
     <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/projects/seagull/</loc>
-    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/projects/super_mario_music_project/</loc>
-    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/seagull/</loc>
+    <lastmod>2025-10-11T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

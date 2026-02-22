@@ -1,8 +1,9 @@
 ---
 title: "Super Mario Music"
-date: 2025-05-20
+date: 2025-12-20
 draft: false
 showReadingTime: false
+tags: ["3D", "Godot", "GD Script"]
 
 ---
 ## 📸 Gallery
