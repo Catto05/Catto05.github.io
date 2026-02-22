@@ -1,5 +1,5 @@
 ---
-title: "Seagull"
+title: "Life Of Kengah"
 date: 2025-10-11
 showReadingTime: false
 tags: ["Game Jam", "Godot", "GD Script"]

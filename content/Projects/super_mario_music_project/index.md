@@ -50,4 +50,4 @@ As the programmer, I was responsible for:
 ---
 
 ## 🔗 Links
-* [Github Code](https://github.com/tuo-profilo/progetto)
+* [Github Code](https://github.com/LevelUpLabTO/2025-team-B/tree/main/prova-character-3d)
