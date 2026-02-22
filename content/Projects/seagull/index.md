@@ -3,6 +3,7 @@ title: "Seagull"
 date: 2025-10-11
 showReadingTime: false
 tags: ["Game Jam", "Godot", "GD Script"]
+featureImage: "img/copertina_itch.png"
 ---
 ## 📸 Gallery
 {{< carousel images="gallery/*" aspectRatio="5-3" interval="2500" >}}

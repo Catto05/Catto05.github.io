@@ -4,7 +4,7 @@ date: 2025-12-20
 draft: false
 showReadingTime: false
 tags: ["3D", "Godot", "GD Script"]
-
+featureImage: "img/bg.jpeg"
 ---
 ## 📸 Gallery
 {{< carousel images="gallery/*" aspectRatio="5-3" interval="2500" >}}
