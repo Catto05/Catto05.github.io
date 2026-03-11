@@ -12,7 +12,7 @@
 
 [[main]]
   name = "Projects"
-  url = "/Projects/"   # Usa 'url' invece di 'pageRef' per forzare il link
+  url = "/Projects/"  
   weight = 20
 
 [[main]]
