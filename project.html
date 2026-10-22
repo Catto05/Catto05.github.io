@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project · Lorenzo Cattolico</title>
+  <meta name="description" content="A game project by Lorenzo Cattolico.">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Lorenzo Cattolico">
+  <meta property="og:title" content="Project · Lorenzo Cattolico">
+  <meta property="og:description" content="A game project by Lorenzo Cattolico.">
+  <meta property="og:image" content="https://catto05.github.io/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#ecedeb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16191b" media="(prefers-color-scheme: dark)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="./">Lorenzo <span>Cattolico</span></a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="./">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap" id="project">
+      <p class="notice" style="margin-top:3rem">Loading project…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Lorenzo Cattolico</p>
+      <ul class="footer-nav">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button type="button" id="lightbox-close">Close</button>
+    <img id="lightbox-img" src="data:," alt="">
+    <p id="lightbox-cap"></p>
+  </dialog>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/project.js"></script>
+</body>
+</html>

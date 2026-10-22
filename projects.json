@@ -1,0 +1,179 @@
+[
+  {
+    "slug": "life-of-kengah",
+    "hidden": false,
+    "featured": true,
+    "title": "Life of Kengah",
+    "tagline": "A hungry seagull, a bottomless ocean and one question: how deep is too deep?",
+    "year": "2025",
+    "genre": "Arcade action, push-your-luck",
+    "engine": "Godot (GDScript)",
+    "duration": "14 days (FAIL/SAFE Jam 2025)",
+    "team": "Team of 4",
+    "role": "Gameplay programmer",
+    "summary": "Built in two weeks for the FAIL/SAFE Jam 2025, Life of Kengah puts you in the wings of a seagull diving for fish. The deeper you go, the rarer and more valuable the catch, but your oxygen keeps dropping and nothing is safe until you're back on the boat.",
+    "contribution": [
+      "Depth-based scoring that scales fish value with how far down you dive, pushing players toward the dark zone of the map.",
+      "An oxygen system that doubles as the run timer, wired to UI warnings that ramp up the tension as the bar empties.",
+      "State-based gameplay handling diving, catching and banking your haul at the boat, so a run's score only persists if you surface in time.",
+      "Collaborative pipeline to integrate art and sound with gameplay code inside the 14-day deadline."
+    ],
+    "challenge": "Making risk feel fair: score, depth and oxygen had to be tuned together so that every dive is a readable decision instead of a coin flip, with a state machine that cleanly separates fish you're carrying from fish you've banked.",
+    "credits": "Lorenzo Cattolico, Marco Silvestri, Francesco Perino, Nicolò Rizzo",
+    "tags": [
+      "Game jam",
+      "Godot",
+      "GDScript",
+      "2D"
+    ],
+    "cover": "assets/img/projects/life-of-kengah/cover.webp",
+    "coverAlt": "Life of Kengah title art: a low-poly seagull gliding over a turquoise sea next to a small fishing boat.",
+    "gallery": [
+      {
+        "src": "assets/img/projects/life-of-kengah/boat-model.webp",
+        "alt": "Low-poly fishing boat model, the player's home base."
+      },
+      {
+        "src": "assets/img/projects/life-of-kengah/fish-model.webp",
+        "alt": "Low-poly yellow fish model used as a catchable creature."
+      },
+      {
+        "src": "assets/img/projects/life-of-kengah/jam-poster.webp",
+        "alt": "FAIL/SAFE Game Jam 2025 poster by Level Up Lab, 11 to 25 October."
+      },
+      {
+        "src": "assets/img/projects/life-of-kengah/jam-presentation.webp",
+        "alt": "Audience in a tent watching the game jam presentations."
+      }
+    ],
+    "videos": [
+      {
+        "src": "assets/video/kengah-gameplay.mp4",
+        "poster": "assets/video/kengah-gameplay.webp",
+        "caption": "Gameplay"
+      }
+    ],
+    "youtube": "19d-DHL2Wu0&t=3s",
+    "itchEmbed": "https://catto05.itch.io/life-of-kengah",
+    "links": [
+      {
+        "label": "Play on itch.io",
+        "url": "https://catto05.itch.io/life-of-kengah"
+      },
+      {
+        "label": "Source on GitHub",
+        "url": "https://github.com/Catto05/game_jam"
+      }
+    ]
+  },
+  {
+    "slug": "super-mario-music",
+    "hidden": false,
+    "featured": true,
+    "title": "Super Mario Music",
+    "tagline": "A 3D platformer where you jump on the beat.",
+    "year": "2025",
+    "genre": "3D rhythm platformer (prototype)",
+    "engine": "Godot (GDScript)",
+    "duration": "2 months",
+    "team": "Team of 4, Level Up Lab (Politecnico di Torino)",
+    "role": "Lead programmer",
+    "summary": "A fan prototype made with Level Up Lab, the student game dev team at Politecnico di Torino. It mixes 3D movement inspired by Super Mario Odyssey and 3D World with rhythm-game timing: platforms move on the beat and a musical mushroom slows time down for the trickiest sections.",
+    "contribution": [
+      "The 3D character controller and its physics, from the first prototype to the final movement feel.",
+      "The system that keeps moving platforms and level elements in sync with the music tracks.",
+      "Power-up logic, including the Musical Note Mushroom and its time-dilation effect."
+    ],
+    "challenge": "Keeping gameplay locked to the soundtrack: platforms are driven by the music's timing rather than by frame time, and slowing the world down with the power-up had to keep the rhythm readable for the player.",
+    "credits": "Programming by Lorenzo Cattolico; music, art direction and coordination by three teammates at Level Up Lab.",
+    "tags": [
+      "3D",
+      "Godot",
+      "GDScript",
+      "Rhythm"
+    ],
+    "cover": "assets/img/projects/super-mario-music/cover.webp",
+    "coverAlt": "Super Mario Music key art: Mario holding a conductor's baton next to the game logo.",
+    "gallery": [
+      {
+        "src": "assets/img/projects/super-mario-music/music-mushroom.webp",
+        "alt": "3D model of the Musical Note Mushroom power-up."
+      },
+      {
+        "src": "assets/img/projects/super-mario-music/flipping-platform.webp",
+        "alt": "Rhythm-synced flipping platform model."
+      },
+      {
+        "src": "assets/img/projects/super-mario-music/goomba.webp",
+        "alt": "3D Goomba enemy model."
+      },
+      {
+        "src": "assets/img/projects/super-mario-music/question-block.webp",
+        "alt": "Question block model on a dark background."
+      },
+      {
+        "src": "assets/img/projects/super-mario-music/brick-block.webp",
+        "alt": "Brick block model on a dark background."
+      },
+      {
+        "src": "assets/img/projects/super-mario-music/bullet-bill.webp",
+        "alt": "Bullet Bill model on a dark background."
+      }
+    ],
+    "videos": [
+      {
+        "src": "assets/video/smm-final.mp4",
+        "poster": "assets/video/smm-final.webp",
+        "caption": "Final result"
+      },
+      {
+        "src": "assets/video/smm-moving-platforms.mp4",
+        "poster": "assets/video/smm-moving-platforms.webp",
+        "caption": "Moving platforms on the beat"
+      },
+      {
+        "src": "assets/video/smm-character-controller.mp4",
+        "poster": "assets/video/smm-character-controller.webp",
+        "caption": "First character controller"
+      }
+    ],
+    "youtube": "",
+    "itchEmbed": "",
+    "links": [
+      {
+        "label": "Source on GitHub",
+        "url": "https://github.com/Catto05/SuperMarioMusic"
+      }
+    ]
+  },
+  {
+    "slug": "next-project",
+    "hidden": false,
+    "featured": false,
+    "title": "TODO: Your next project",
+    "tagline": "TODO: one line that sells the game.",
+    "year": "2026",
+    "genre": "TODO: genre",
+    "engine": "TODO: engine",
+    "duration": "TODO: duration",
+    "team": "TODO: solo or team size",
+    "role": "TODO: your role",
+    "summary": "TODO: two or three sentences on what the game is and what makes it interesting. Set \"hidden\": true in projects.json to hide this entry until it's ready.",
+    "contribution": [
+      "TODO: something concrete you built.",
+      "TODO: another thing you built."
+    ],
+    "challenge": "TODO: the hardest technical problem you solved and how.",
+    "credits": "",
+    "tags": [
+      "TODO"
+    ],
+    "cover": "",
+    "coverAlt": "",
+    "gallery": [],
+    "videos": [],
+    "youtube": "",
+    "itchEmbed": "",
+    "links": []
+  }
+]
