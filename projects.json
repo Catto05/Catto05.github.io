@@ -91,7 +91,7 @@
       "Particles effect",
       "Game Design"
     ],
-    "challenge": "Drag and Drop system",
+    "challenge": "Moving objects in 3D with the mouse. The pointer gives a 2D position on the screen, but the items had to move in 3D space. I solved it with an invisible plane: each frame I cast a ray from the camera through the pointer, found where it hits the plane, and converted that hit point into 3D world coordinates for the dragged item. This made dragging feel precise and predictable from any camera angle, and it was my first time turning screen input into 3D movement.",
     "credits": "Made by Amose05 and catto05.",
     "tags": [
       "Godot",
@@ -145,7 +145,7 @@
       "State-based gameplay handling diving, catching and banking your haul at the boat, so a run's score only persists if you surface in time.",
       "Collaborative pipeline to integrate art and sound with gameplay code inside the 14-day deadline."
     ],
-    "challenge": "Making risk feel fair: score, depth and oxygen had to be tuned together so that every dive is a readable decision instead of a coin flip, with a state machine that cleanly separates fish you're carrying from fish you've banked.",
+    "challenge": "Making risk feel fair: score, depth and oxygen had to be tuned together so that every dive is a readable decision instead of a coin flip.",
     "credits": "Lorenzo Cattolico, Marco Silvestri, Francesco Perino, Nicolò Rizzo",
     "tags": [
       "Game jam",
@@ -205,7 +205,7 @@
       "The system that keeps moving platforms and level elements in sync with the music tracks.",
       "Power-up logic, including the Musical Note Mushroom and its time-dilation effect."
     ],
-    "challenge": "Keeping gameplay locked to the soundtrack: platforms are driven by the music's timing rather than by frame time, and slowing the world down with the power-up had to keep the rhythm readable for the player.",
+    "challenge": "Keeping gameplay locked to the soundtrack: platforms are driven by the music's timing rather than by frame time, and slowing the world down with the power-up had to keep the rhythm readable for the player. Moreover, a state machine was implemented in order to keep track of the player's status at any time",
     "credits": "Programming by Lorenzo Cattolico; music, art direction and coordination by three teammates at Level Up Lab.",
     "tags": [
       "3D",
