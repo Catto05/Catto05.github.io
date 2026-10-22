@@ -65,7 +65,7 @@
         "caption": "Prototype: movement state chart and minimap"
       }
     ],
-    "itchEmbed": "",
+
     "github": "https://github.com/LevelUpLabTO/LUL2.0-teamB-2nd",
     "itch": "https://catto05.itch.io/office-madness",
     "trailer": {
@@ -119,7 +119,6 @@
       }
     ],
     "videos": [],
-    "itchEmbed": "",
     "github": "https://github.com/Amose3535/TeamSeagull_iGameJam",
     "itch": "https://amose05.itch.io/mend-it",
     "trailer": {
@@ -181,7 +180,6 @@
         "caption": "Gameplay"
       }
     ],
-    "itchEmbed": "TODO: itch.io embed URL, e.g. https://itch.io/embed-upload/catto05.itch.io/life-of-kengah",
     "github": "https://github.com/Catto05/game_jam",
     "itch": "https://catto05.itch.io/life-of-kengah",
     "trailer": {
@@ -198,7 +196,7 @@
     "year": "2025",
     "genre": "3D rhythm platformer (prototype)",
     "engine": "Godot (GDScript)",
-    "duration": "TODO: how long it took, e.g. 2 months",
+    "duration": "2 months",
     "team": "Team of 4, Level Up Lab (Politecnico di Torino)",
     "role": "Lead programmer",
     "summary": "A fan prototype made with Level Up Lab, the student game dev team at Politecnico di Torino. It mixes 3D movement inspired by Super Mario Odyssey and 3D World with rhythm-game timing: platforms move on the beat and a musical mushroom slows time down for the trickiest sections.",
@@ -260,7 +258,6 @@
         "caption": "First character controller"
       }
     ],
-    "itchEmbed": "",
     "github": "https://github.com/Catto05/SuperMarioMusic",
     "itch": "",
     "trailer": {
