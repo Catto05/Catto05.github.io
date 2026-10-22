@@ -35,16 +35,17 @@
       ? `<div class="p-cover"><img src="${esc(p.cover)}" alt="${esc(p.coverAlt)}" width="1600" height="900" fetchpriority="high"></div>`
       : `<div class="p-cover"><div class="placeholder-media">Cover image goes here</div></div>`;
 
+    // Videos behave like GIFs: muted, looping, no controls, playing only while on screen.
+    // Clips are animated GIFs; an .mp4 entry still works and plays like a GIF (muted loop).
     const videos = (p.videos || [])
-      .map(
-        (v) => `<figure>
-          <video controls muted playsinline preload="none" poster="${esc(v.poster || "")}">
-            <source src="${esc(v.src)}" type="video/mp4">
-            Your browser can't play this video. <a href="${esc(v.src)}">Download it</a>.
-          </video>
-          ${v.caption ? `<figcaption>${esc(v.caption)}</figcaption>` : ""}
-        </figure>`
-      )
+      .map((v) => {
+        const media = /\.gif$/i.test(v.src)
+          ? `<img class="gif" src="${esc(v.src)}" data-gif="${esc(v.src)}" data-poster="${esc(v.poster || "")}"
+                 alt="${esc(v.caption || p.title)}" loading="lazy" decoding="async" width="640" height="360">`
+          : `<video class="gif" autoplay muted loop playsinline poster="${esc(v.poster || "")}" aria-label="${esc(v.caption || p.title)}">
+               <source src="${esc(v.src)}" type="video/mp4"></video>`;
+        return `<figure>${media}${v.caption ? `<figcaption>${esc(v.caption)}</figcaption>` : ""}</figure>`;
+      })
       .join("");
 
     const gallery = (p.gallery || [])
@@ -101,6 +102,22 @@
       </div>`;
 
     wireLightbox(p.gallery || []);
+    wireGifs();
+  }
+
+  // With "reduce motion" on, GIFs start as a still frame and play on click or Enter.
+  function wireGifs() {
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    root.querySelectorAll("img.gif[data-poster]").forEach((img) => {
+      if (!img.dataset.poster) return;
+      img.src = img.dataset.poster;
+      img.tabIndex = 0;
+      img.setAttribute("role", "button");
+      img.title = "Play or pause animation";
+      const toggle = () => { img.src = img.src.endsWith(".gif") ? img.dataset.poster : img.dataset.gif; };
+      img.addEventListener("click", toggle);
+      img.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+    });
   }
 
   function wireLightbox(items) {

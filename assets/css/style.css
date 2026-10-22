@@ -357,3 +357,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* animated GIF clips on project pages */
+.media-grid .gif { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); background: #000; }
+.media-grid img.gif[role="button"] { cursor: pointer; }

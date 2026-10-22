@@ -45,22 +45,22 @@
     ],
     "videos": [
       {
-        "src": "assets/video/om-intro.mp4",
+        "src": "assets/gif/om-intro.gif",
         "poster": "assets/video/om-intro.webp",
         "caption": "Intro cutscene"
       },
       {
-        "src": "assets/video/om-enemies.mp4",
+        "src": "assets/gif/om-enemies.gif",
         "poster": "assets/video/om-enemies.webp",
         "caption": "Prototype: first enemies and the pencil weapon"
       },
       {
-        "src": "assets/video/om-weapons.mp4",
+        "src": "assets/gif/om-weapons.gif",
         "poster": "assets/video/om-weapons.webp",
         "caption": "Prototype: weapon switching and projectiles"
       },
       {
-        "src": "assets/video/om-state-chart.mp4",
+        "src": "assets/gif/om-state-chart.gif",
         "poster": "assets/video/om-state-chart.webp",
         "caption": "Prototype: movement state chart and minimap"
       }
@@ -118,7 +118,7 @@
     ],
     "videos": [
       {
-        "src": "assets/video/kengah-gameplay.mp4",
+        "src": "assets/gif/kengah-gameplay.gif",
         "poster": "assets/video/kengah-gameplay.webp",
         "caption": "Gameplay"
       }
@@ -192,17 +192,17 @@
     ],
     "videos": [
       {
-        "src": "assets/video/smm-final.mp4",
+        "src": "assets/gif/smm-final.gif",
         "poster": "assets/video/smm-final.webp",
         "caption": "Final result"
       },
       {
-        "src": "assets/video/smm-moving-platforms.mp4",
+        "src": "assets/gif/smm-moving-platforms.gif",
         "poster": "assets/video/smm-moving-platforms.webp",
         "caption": "Moving platforms on the beat"
       },
       {
-        "src": "assets/video/smm-character-controller.mp4",
+        "src": "assets/gif/smm-character-controller.gif",
         "poster": "assets/video/smm-character-controller.webp",
         "caption": "First character controller"
       }
