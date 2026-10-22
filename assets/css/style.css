@@ -159,7 +159,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 }
 
 .featured { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; }
-@media (min-width: 44rem) { .featured { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 44rem) { .featured { grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); } }
 .tile {
   position: relative; background: var(--raised); border: 1px solid var(--line);
   border-radius: var(--radius); overflow: hidden;

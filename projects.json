@@ -1,5 +1,75 @@
 [
   {
+    "slug": "office-madness",
+    "hidden": false,
+    "featured": true,
+    "title": "Office Madness",
+    "tagline": "Pencils, a printer and a stapler against waves of very angry co-workers.",
+    "year": "2026",
+    "genre": "First-person shooter, wave survival",
+    "engine": "Godot 4.6 (GDScript)",
+    "duration": "10 weeks (March to June 2026)",
+    "team": "Team of 4, Level Up Lab 2.0 Team B",
+    "role": "Gameplay programmer",
+    "summary": "Office Madness is a first-person wave shooter set in an open-plan office. Armed only with office supplies, you hold out against waves of furious colleagues while a minimap tracks who's coming for you. I built it over ten weeks with Level Up Lab 2.0, the student game dev team at Politecnico di Torino.",
+    "contribution": [
+      "A first-person controller built on a state chart: walk, sprint, crouch, slide and jump, with head bob, camera roll, a landing kick and per-weapon screen shake.",
+      "Three office-supply weapons driven by their own state chart (idle, firing, empty): pencils thrown as projectiles that stick where they land, a printer that launches projectiles and a hitscan stapler, plus ammo, a three-slot inventory and pickups.",
+      "Three enemy types on a shared base class with NavigationAgent3D pathfinding: a rusher that punches, a shooter with hitscan spread and a thrower that fires on animation keys, all with a fresnel hit-flash shader.",
+      "A wave manager with a spawn queue, timers and spawn points, wired to the wave and enemies-left UI and the victory screen.",
+      "Minimap and full-screen map, pause and settings menus with key rebinding, gamepad support and the intro cutscene."
+    ],
+    "challenge": "Keeping three very different weapons and a full movement set under control. I modelled both the player and the weapons as state charts, so every state and transition is explicit and visible in the debugger, and moved weapon stats (damage, range, hitscan or projectile) into Godot Resources: adding a weapon means a data file and a model, not new code.",
+    "credits": "Made with Level Up Lab 2.0, Team B (Politecnico di Torino).",
+    "tags": [
+      "Godot",
+      "GDScript",
+      "3D",
+      "FPS"
+    ],
+    "cover": "assets/img/projects/office-madness/copertina.png",
+    "coverAlt": "First-person view in an office: an angry co-worker in a red shirt charges at the player, who holds a pencil, with the minimap, health bar and weapon slots on screen.",
+    "gallery": [
+      {
+        "src": "assets/img/projects/office-madness/office-floor.webp",
+        "alt": "The open-plan office level with desks, monitors and a coffee mug pickup, seen from the player's view."
+      },
+      {
+        "src": "assets/img/projects/office-madness/greybox-weapons.webp",
+        "alt": "Early greybox prototype with the pencil cup weapon, placeholder cubes and the first minimap."
+      },
+      {
+        "src": "assets/img/projects/office-madness/cover.webp",
+        "alt": "final result."
+      }
+    ],
+    "videos": [
+      {
+        "src": "assets/video/om-intro.mp4",
+        "poster": "assets/video/om-intro.webp",
+        "caption": "Intro cutscene"
+      },
+      {
+        "src": "assets/video/om-enemies.mp4",
+        "poster": "assets/video/om-enemies.webp",
+        "caption": "Prototype: first enemies and the pencil weapon"
+      },
+      {
+        "src": "assets/video/om-weapons.mp4",
+        "poster": "assets/video/om-weapons.webp",
+        "caption": "Prototype: weapon switching and projectiles"
+      },
+      {
+        "src": "assets/video/om-state-chart.mp4",
+        "poster": "assets/video/om-state-chart.webp",
+        "caption": "Prototype: movement state chart and minimap"
+      }
+    ],
+    "youtube": "TODO: YouTube ID of a final gameplay video (the clips above are prototypes)",
+    "itchEmbed": "",
+    "links": []
+  },
+  {
     "slug": "life-of-kengah",
     "hidden": false,
     "featured": true,
@@ -10,7 +80,7 @@
     "engine": "Godot (GDScript)",
     "duration": "14 days (FAIL/SAFE Jam 2025)",
     "team": "Team of 4",
-    "role": "Gameplay programmer",
+    "role": "TODO: your role, e.g. Gameplay programmer",
     "summary": "Built in two weeks for the FAIL/SAFE Jam 2025, Life of Kengah puts you in the wings of a seagull diving for fish. The deeper you go, the rarer and more valuable the catch, but your oxygen keeps dropping and nothing is safe until you're back on the boat.",
     "contribution": [
       "Depth-based scoring that scales fish value with how far down you dive, pushing players toward the dark zone of the map.",
@@ -53,8 +123,8 @@
         "caption": "Gameplay"
       }
     ],
-    "youtube": "19d-DHL2Wu0&t=3s",
-    "itchEmbed": "https://catto05.itch.io/life-of-kengah",
+    "youtube": "TODO: YouTube video ID of the trailer (the part after watch?v=)",
+    "itchEmbed": "TODO: itch.io embed URL, e.g. https://itch.io/embed-upload/1234567?color=333333",
     "links": [
       {
         "label": "Play on itch.io",
@@ -75,7 +145,7 @@
     "year": "2025",
     "genre": "3D rhythm platformer (prototype)",
     "engine": "Godot (GDScript)",
-    "duration": "2 months",
+    "duration": "TODO: how long it took, e.g. 2 months",
     "team": "Team of 4, Level Up Lab (Politecnico di Torino)",
     "role": "Lead programmer",
     "summary": "A fan prototype made with Level Up Lab, the student game dev team at Politecnico di Torino. It mixes 3D movement inspired by Super Mario Odyssey and 3D World with rhythm-game timing: platforms move on the beat and a musical mushroom slows time down for the trickiest sections.",
@@ -145,35 +215,5 @@
         "url": "https://github.com/Catto05/SuperMarioMusic"
       }
     ]
-  },
-  {
-    "slug": "next-project",
-    "hidden": false,
-    "featured": false,
-    "title": "TODO: Your next project",
-    "tagline": "TODO: one line that sells the game.",
-    "year": "2026",
-    "genre": "TODO: genre",
-    "engine": "TODO: engine",
-    "duration": "TODO: duration",
-    "team": "TODO: solo or team size",
-    "role": "TODO: your role",
-    "summary": "TODO: two or three sentences on what the game is and what makes it interesting. Set \"hidden\": true in projects.json to hide this entry until it's ready.",
-    "contribution": [
-      "TODO: something concrete you built.",
-      "TODO: another thing you built."
-    ],
-    "challenge": "TODO: the hardest technical problem you solved and how.",
-    "credits": "",
-    "tags": [
-      "TODO"
-    ],
-    "cover": "",
-    "coverAlt": "",
-    "gallery": [],
-    "videos": [],
-    "youtube": "",
-    "itchEmbed": "",
-    "links": []
   }
 ]
