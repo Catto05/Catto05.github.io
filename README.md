@@ -112,3 +112,4 @@ Buy a domain, add it in **Settings → Pages → Custom domain**, and follow Git
 
 - Social networks read the default preview (`assets/img/og-image.jpg`) for every page, including project pages, because the project title is filled in by JavaScript. If you want a custom preview for one project, make a copy of `project.html` with its own `<meta property="og:...">` tags.
 - The font (Schibsted Grotesk) loads from Google Fonts. Without it the site falls back to the system font.
+  
