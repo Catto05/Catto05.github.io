@@ -1,7 +1,7 @@
 /* Projects page: full list of projects from projects.json, with tag filters. */
 (function () {
   "use strict";
-  const { esc, text, filled, isTodo, loadProjects, factsList, loadError } = window.Portfolio;
+  const { esc, text, filled, isTodo, loadProjects, factsList, loadError, storeLinks } = window.Portfolio;
   const list = document.getElementById("project-list");
   const filters = document.getElementById("filters");
   const counter = document.getElementById("result-count");
@@ -15,7 +15,6 @@
     const media = filled(p.cover)
       ? `<img src="${esc(p.cover)}" alt="${esc(p.coverAlt)}" width="1600" height="1000" loading="lazy" decoding="async">`
       : `<div class="placeholder-media">Cover image goes here</div>`;
-    const ext = (p.links || []).find((l) => filled(l.url));
     const tags = (p.tags || []).map((t) => `<li>${text(t)}</li>`).join("");
 
     return `<li>
@@ -29,7 +28,7 @@
           ${tags ? `<ul class="tags" aria-label="Tags">${tags}</ul>` : ""}
           <div class="actions">
             <a class="btn btn-primary" href="${url}">Open project</a>
-            ${ext ? `<a class="btn" href="${esc(ext.url)}">${esc(ext.label)}</a>` : ""}
+            ${storeLinks(p, false)}
           </div>
         </div>
       </article>

@@ -361,3 +361,24 @@ p { margin: 0 0 1em; max-width: 68ch; }
 /* animated GIF clips on project pages */
 .media-grid .gif { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); background: #000; }
 .media-grid img.gif[role="button"] { cursor: pointer; }
+
+/* GitHub / itch.io logo buttons */
+.store-links { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: 0; padding: 0; }
+.store-link {
+  display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+  min-width: 2.9rem; min-height: 2.9rem; padding: 0 .8rem;
+  border: 1.5px solid var(--ink); border-radius: var(--radius);
+  color: var(--ink); background: var(--bg); text-decoration: none; font-weight: 600;
+}
+.store-link svg { width: 1.3rem; height: 1.3rem; fill: currentColor; flex: none; }
+.store-link:hover { color: var(--accent); border-color: var(--accent); }
+.store-links:not(.with-text) .store-link { padding: 0; }
+.p-body aside .store-links { flex-direction: column; margin-top: 1.75rem; }
+.p-body aside .store-link { justify-content: flex-start; width: 100%; }
+.p-body aside .todo-block { margin-top: .75rem; }
+.entry .actions { align-items: center; }
+.tile-foot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: .6rem; }
+.tile-foot .tile-meta { margin: 0; }
+.tile .store-links { position: relative; z-index: 1; flex-wrap: nowrap; flex: none; }
+.tile .store-link { min-width: 2.5rem; min-height: 2.5rem; }
+video.trailer { width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: var(--radius); }

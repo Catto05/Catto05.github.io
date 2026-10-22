@@ -65,8 +65,66 @@
         "caption": "Prototype: movement state chart and minimap"
       }
     ],
-    "youtube": "TODO: YouTube ID of a final gameplay video (the clips above are prototypes)",
     "itchEmbed": "",
+    "github": "https://github.com/LevelUpLabTO/LUL2.0-teamB-2nd",
+    "itch": "https://catto05.itch.io/office-madness",
+    "trailer": {
+      "youtube": "fBhC46WPvTw"
+    },
+    "links": []
+  },
+  {
+    "slug": "mend-it",
+    "hidden": false,
+    "featured": true,
+    "title": "Mend It!",
+    "tagline": "Run an eco-friendly tailoring atelier and give old clothes a new life.",
+    "year": "2026",
+    "genre": "Simulation, work sim inspired by Papers, Please",
+    "engine": "Godot",
+    "duration": "1 week",
+    "team": "Made with Amose05",
+    "role": "Co-programmer",
+    "summary": "Pollution is rising and water is being wasted, so you open your own ecological recycling atelier. Clients send in orders with a garment they want and a budget; you take the jobs, repair and rework old clothes, and deliver them. When enabled in the settings, clients answer your finished work with messages written by a small LLM that runs locally on your machine.",
+    "contribution": [
+      "UI",
+      "Particles effect",
+      "Game Design"
+    ],
+    "challenge": "Drag and Drop system",
+    "credits": "Made by Amose05 and catto05.",
+    "tags": [
+      "Godot",
+      "3D",
+      "Simulation"
+    ],
+    "cover": "assets/img/projects/mend-it/cover.webp",
+    "coverAlt": "A wooden workbench with a sewing machine, scissors hanging on a pegboard, a potted plant and a red pincushion.",
+    "gallery": [
+      {
+        "src": "assets/img/projects/mend-it/workbench.webp",
+        "alt": "A black garment laid on the workbench with scissors, a ball of yarn and a pincushion, and a new order notification."
+      },
+      {
+        "src": "assets/img/projects/mend-it/atelier-menu.webp",
+        "alt": "The Seagull Atelier menu with Shop, Inventory and Tasks buttons."
+      },
+      {
+        "src": "assets/img/projects/mend-it/new-order.webp",
+        "alt": "A task from the client Sara asking for a black dress with a budget of 13 euros."
+      },
+      {
+        "src": "assets/img/projects/mend-it/client-reply.webp",
+        "alt": "A completed task with a thank-you message from a client, generated locally by an LLM."
+      }
+    ],
+    "videos": [],
+    "itchEmbed": "",
+    "github": "https://github.com/Amose3535/TeamSeagull_iGameJam",
+    "itch": "https://amose05.itch.io/mend-it",
+    "trailer": {
+      "youtube": "GxWp0zTMPAg"
+    },
     "links": []
   },
   {
@@ -80,7 +138,7 @@
     "engine": "Godot (GDScript)",
     "duration": "14 days (FAIL/SAFE Jam 2025)",
     "team": "Team of 4",
-    "role": "TODO: your role, e.g. Gameplay programmer",
+    "role": "Gameplay programmer",
     "summary": "Built in two weeks for the FAIL/SAFE Jam 2025, Life of Kengah puts you in the wings of a seagull diving for fish. The deeper you go, the rarer and more valuable the catch, but your oxygen keeps dropping and nothing is safe until you're back on the boat.",
     "contribution": [
       "Depth-based scoring that scales fish value with how far down you dive, pushing players toward the dark zone of the map.",
@@ -123,18 +181,13 @@
         "caption": "Gameplay"
       }
     ],
-    "youtube": "TODO: YouTube video ID of the trailer (the part after watch?v=)",
-    "itchEmbed": "TODO: itch.io embed URL, e.g. https://itch.io/embed-upload/1234567?color=333333",
-    "links": [
-      {
-        "label": "Play on itch.io",
-        "url": "https://catto05.itch.io/life-of-kengah"
-      },
-      {
-        "label": "Source on GitHub",
-        "url": "https://github.com/Catto05/game_jam"
-      }
-    ]
+    "itchEmbed": "TODO: itch.io embed URL, e.g. https://itch.io/embed-upload/catto05.itch.io/life-of-kengah",
+    "github": "https://github.com/Catto05/game_jam",
+    "itch": "https://catto05.itch.io/life-of-kengah",
+    "trailer": {
+      "youtube": "19d-DHL2Wu0"
+    },
+    "links": []
   },
   {
     "slug": "super-mario-music",
@@ -207,13 +260,13 @@
         "caption": "First character controller"
       }
     ],
-    "youtube": "",
     "itchEmbed": "",
-    "links": [
-      {
-        "label": "Source on GitHub",
-        "url": "https://github.com/Catto05/SuperMarioMusic"
-      }
-    ]
+    "github": "https://github.com/Catto05/SuperMarioMusic",
+    "itch": "",
+    "trailer": {
+      "src": "assets/video/smm-final.mp4",
+      "poster": "assets/video/smm-final.webp"
+    },
+    "links": []
   }
 ]

@@ -48,8 +48,9 @@ Open `projects.json`. Every project is one `{ ... }` block; the order in the fil
 | `credits`, `tags` | Optional |
 | `cover`, `coverAlt` | Cover image (16:10 or 16:9 works best) and its description for screen readers |
 | `gallery` | List of `{ "src": "...", "alt": "..." }` |
-| `videos` | List of `{ "src": "x.mp4", "poster": "x.webp", "caption": "..." }` |
-| `youtube` | Trailer: a YouTube ID or full link. Empty = hidden |
+| `videos` | Short looping clips: list of `{ "src": "assets/gif/x.gif", "poster": "x.webp", "caption": "..." }` |
+| `trailer` | `{"youtube": "<ID or link>"}` or a local file `{"src": "assets/video/x.mp4", "poster": "assets/video/x.webp"}`. Empty = hidden |
+| `github`, `itch` | Links shown as GitHub and itch.io logo buttons. Empty = hidden |
 | `itchEmbed` | Browser build from itch.io. Empty = hidden |
 | `links` | Buttons: list of `{ "label": "...", "url": "..." }`. The first one is highlighted |
 
@@ -105,6 +106,7 @@ Buy a domain, add it in **Settings → Pages → Custom domain**, and follow Git
 ## Customising
 
 - **Colors and fonts**: the variables at the top of `assets/css/style.css` (light theme) and the `prefers-color-scheme: dark` block right after (dark theme).
+- **After changing CSS or JS**: change the `?v=...` number after `style.css` and the `.js` files in every HTML page (any new value works, e.g. today's date). Browsers then download the new files instead of mixing old and new ones from their cache.
 - **Hero grid**: `assets/js/tiles.js`. `CELL` is the tile size, `FADE` how quickly tiles disappear, `MAX_ALPHA` how dark they get.
 - **Text** of each page: directly in `index.html`, `about.html` and `contact.html`. The header menu is repeated at the top of every HTML file: if you add a page, add its link to all of them.
 

@@ -1,7 +1,7 @@
 /* Renders a single project page: project.html?p=<slug> */
 (function () {
   "use strict";
-  const { esc, text, filled, isTodo, loadProjects, factsList, loadError } = window.Portfolio;
+  const { esc, text, filled, isTodo, loadProjects, factsList, loadError, storeLinks } = window.Portfolio;
   const root = document.getElementById("project");
   const slug = new URLSearchParams(location.search).get("p");
 
@@ -27,7 +27,18 @@
 
   function render(p, next) {
     setMeta(p);
-    const yt = youtubeId(p.youtube);
+    // Trailer: {"youtube": "<id or link>"} or {"src": "file.mp4", "poster": "image"}.
+    const tr = p.trailer || (p.youtube ? { youtube: p.youtube } : {});
+    const yt = youtubeId(tr.youtube);
+    const trailer = yt
+      ? `<iframe class="embed" src="https://www.youtube-nocookie.com/embed/${yt}" title="${esc(p.title)} trailer on YouTube"
+           loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>`
+      : filled(tr.src)
+        ? `<video class="trailer" controls playsinline preload="metadata" poster="${esc(tr.poster || "")}">
+             <source src="${esc(tr.src)}" type="video/mp4">
+             Your browser can't play this video. <a href="${esc(tr.src)}">Download it</a>.
+           </video>`
+        : "";
     const itch = filled(p.itchEmbed) ? p.itchEmbed : null;
     const links = (p.links || []).filter((l) => filled(l.url));
 
@@ -35,7 +46,6 @@
       ? `<div class="p-cover"><img src="${esc(p.cover)}" alt="${esc(p.coverAlt)}" width="1600" height="900" fetchpriority="high"></div>`
       : `<div class="p-cover"><div class="placeholder-media">Cover image goes here</div></div>`;
 
-    // Videos behave like GIFs: muted, looping, no controls, playing only while on screen.
     // Clips are animated GIFs; an .mp4 entry still works and plays like a GIF (muted loop).
     const videos = (p.videos || [])
       .map((v) => {
@@ -67,6 +77,8 @@
       <div class="p-body">
         <aside aria-label="Project facts">
           ${factsList(p, ["year", "genre", "engine", "duration", "team", "role"])}
+          ${storeLinks(p, true)}
+          ${["github", "itch"].filter((k) => isTodo(p[k])).map((k) => `<p class="todo-block">${esc(p[k])}</p>`).join("")}
           ${links.length ? `<div class="actions">${links
             .map((l, i) => `<a class="btn ${i === 0 ? "btn-primary" : ""}" href="${esc(l.url)}">${esc(l.label)}</a>`)
             .join("")}</div>` : ""}
@@ -76,14 +88,12 @@
           <h2>Overview</h2>
           <p>${text(p.summary)}</p>
 
+          ${trailer ? `<h2>Trailer</h2>${trailer}`
+            : todoNote(tr.youtube, "Add the trailer in projects.json: \"trailer\": {\"youtube\": \"<id>\"} or {\"src\": \"assets/video/file.mp4\"}.")}
+
           ${p.contribution?.length ? `<h2>What I built</h2><ul>${p.contribution.map((c) => `<li>${text(c)}</li>`).join("")}</ul>` : ""}
 
           ${p.challenge ? `<h2>The hard part</h2><p class="challenge">${text(p.challenge)}</p>` : ""}
-
-          ${yt ? `<h2>Trailer</h2>
-            <iframe class="embed" src="https://www.youtube-nocookie.com/embed/${yt}" title="${esc(p.title)} trailer on YouTube"
-              loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>`
-            : todoNote(p.youtube, "Paste the trailer's YouTube ID or link in projects.json, or leave the field empty to hide this.")}
 
           ${itch ? `<h2>Play in your browser</h2>
             <iframe class="embed embed-itch" src="${esc(itch)}" title="Play ${esc(p.title)} on itch.io" loading="lazy" allowfullscreen></iframe>`
